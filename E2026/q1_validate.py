@@ -20,7 +20,7 @@ def main():
     ids = [r["sample_id"] for r in rows]
     problems = []
     totals = {"feature_bytes": 0, "mapping_bytes": 0, "word_count": 0,
-              "text_bins": 0, "vision_bins": 0}
+              "text_bins": 0, "vision_bins": 0, "face_bins": 0, "audio_signal_bins": 0}
     for row in rows:
         sid = row["sample_id"]
         if row["status"] != "ok":
@@ -46,6 +46,14 @@ def main():
                 problems.append(sid + ": nonmonotone time edges")
             totals["text_bins"] += int(feature["text_observed"].sum())
             totals["vision_bins"] += int(feature["vision_observed"].sum())
+            if "face_observed" in feature:
+                totals["face_bins"] += int(feature["face_observed"].sum())
+                if not np.array_equal(feature["face_observed"], feature["vision"][:, 18] > 0.5):
+                    problems.append(sid + ": face mask invalid")
+            if "audio_signal_present" in feature:
+                totals["audio_signal_bins"] += int(feature["audio_signal_present"].sum())
+                if not np.array_equal(feature["audio_signal_present"], feature["audio"][:, 16] > 1e-6):
+                    problems.append(sid + ": audio signal mask invalid")
         mapping = json.loads(map_path.read_text(encoding="utf-8"))
         if mapping["sample_id"] != sid or len(mapping["bins"]) != 50:
             problems.append(sid + ": map identity/count")
@@ -67,7 +75,7 @@ def main():
                "feature_files": len(list(root.glob("*.npz"))),
                "mapping_files": len([p for p in root.glob("*.json") if p.name != "summary.json"]),
                "totals": totals, "problems": problems,
-               "text_timing": "energy-weighted estimate; not forced alignment"}
+               "text_timing": "estimated; see per-sample alignment_method and alignment_quality"}
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False, indent=2))

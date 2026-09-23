@@ -1,0 +1,18 @@
+{
+  "samples": 100,
+  "unique_ids": 100,
+  "label_ids_matched": 100,
+  "feature_files": 100,
+  "mapping_files": 100,
+  "totals": {
+    "feature_bytes": 866549,
+    "mapping_bytes": 1254550,
+    "word_count": 2166,
+    "text_bins": 2057,
+    "vision_bins": 5000,
+    "face_bins": 2216,
+    "audio_signal_bins": 4900
+  },
+  "problems": [],
+  "text_timing": "estimated; see per-sample alignment_method and alignment_quality"
+}
