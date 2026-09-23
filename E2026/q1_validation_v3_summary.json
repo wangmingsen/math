@@ -1,0 +1,14 @@
+{
+  "samples": 100,
+  "unique_ids": 100,
+  "label_ids_matched": 100,
+  "feature_files": 100,
+  "mapping_files": 100,
+  "totals": {
+    "text_bins": 2057,
+    "audio_bins": 4900,
+    "face_bins": 4612,
+    "words": 2166
+  },
+  "problems": []
+}
