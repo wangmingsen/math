@@ -1,0 +1,11 @@
+# 原始赛题数据、模型权重和临时输出不要误推送
+E题数据/
+*.pkl
+*.mp4
+*.zip
+*.pth
+*.pt
+*.ckpt
+__pycache__/
+.venv/
+outputs/
