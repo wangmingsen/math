@@ -1,0 +1,27 @@
+{
+  "data_version": "aligned_50",
+  "feature_definition": "256-bin hashed BERT token IDs + nonzero-row audio/vision mean and std",
+  "train_count": 3395,
+  "valid_count": 728,
+  "feature_count": 474,
+  "clean_valid": {
+    "accuracy": 0.45467032967032966,
+    "f1_macro": 0.4362443542010106,
+    "mae": 0.8008738767437555,
+    "pearson": 0.28590873022414
+  },
+  "masked_valid": {
+    "audio": {
+      "accuracy": 0.4574175824175824,
+      "f1_macro": 0.43867809125321555,
+      "mae": 0.8067403731478767,
+      "pearson": 0.2803728043924276
+    },
+    "vision": {
+      "accuracy": 0.46016483516483514,
+      "f1_macro": 0.44142747542520394,
+      "mae": 0.7996544902530182,
+      "pearson": 0.2862418852558018
+    }
+  }
+}
