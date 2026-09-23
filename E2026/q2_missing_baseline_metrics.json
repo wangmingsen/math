@@ -1,0 +1,190 @@
+{
+  "seed": 2026,
+  "train": 3395,
+  "valid": 728,
+  "class_counts": [
+    967,
+    758,
+    1670
+  ],
+  "protocol": "A2 train fits all transforms/models; A2 valid evaluates; A2 test untouched",
+  "text": "same frozen BERT encoder for A2/A3, 5 segments, train-only PCA 48",
+  "fusion": "5 audio/vision means plus occupancy and interior-zero fractions",
+  "augmentation": "clean + one random contiguous gap per modality per training sample",
+  "injected_training_positions": {
+    "audio": 23055,
+    "vision": 21889,
+    "text": 3395
+  },
+  "affected_validation_positions": {
+    "clean": 0,
+    "audio_25pct_start": 4286,
+    "audio_25pct_middle": 4286,
+    "audio_25pct_end": 4286,
+    "vision_25pct_start": 4076,
+    "vision_25pct_middle": 4036,
+    "vision_25pct_end": 4062,
+    "text_1segment_start": 728,
+    "text_1segment_middle": 728,
+    "text_1segment_end": 728
+  },
+  "naive_valid": {
+    "majority_accuracy": 0.4642857142857143,
+    "train_mean_mae": 0.7808470129966736
+  },
+  "metrics": {
+    "text_only": {
+      "clean": {
+        "accuracy": 0.570054945054945,
+        "f1_macro": 0.5630136060386844,
+        "auc_macro_ovr": 0.7515767345767018,
+        "mae": 0.654999852180481,
+        "pearson": 0.5776645218394212
+      }
+    },
+    "clean_fusion": {
+      "clean": {
+        "accuracy": 0.5164835164835165,
+        "f1_macro": 0.5053886873252841,
+        "auc_macro_ovr": 0.7004168523596448,
+        "mae": 0.7349287867546082,
+        "pearson": 0.4740514588283165
+      },
+      "audio_25pct_start": {
+        "accuracy": 0.44642857142857145,
+        "f1_macro": 0.45017882873203624,
+        "auc_macro_ovr": 0.6840342704602212,
+        "mae": 0.733538031578064,
+        "pearson": 0.47665773296445085
+      },
+      "audio_25pct_middle": {
+        "accuracy": 0.49725274725274726,
+        "f1_macro": 0.49551576161872274,
+        "auc_macro_ovr": 0.6969807192648795,
+        "mae": 0.7402551770210266,
+        "pearson": 0.46880656390122255
+      },
+      "audio_25pct_end": {
+        "accuracy": 0.510989010989011,
+        "f1_macro": 0.5072313094321667,
+        "auc_macro_ovr": 0.7093458994656073,
+        "mae": 0.7086969017982483,
+        "pearson": 0.5119523665520704
+      },
+      "vision_25pct_start": {
+        "accuracy": 0.5,
+        "f1_macro": 0.49283821965185054,
+        "auc_macro_ovr": 0.6996805014547824,
+        "mae": 0.739636242389679,
+        "pearson": 0.4743241446440175
+      },
+      "vision_25pct_middle": {
+        "accuracy": 0.5068681318681318,
+        "f1_macro": 0.48883258246014155,
+        "auc_macro_ovr": 0.692051286583316,
+        "mae": 0.7574266791343689,
+        "pearson": 0.46070677145190075
+      },
+      "vision_25pct_end": {
+        "accuracy": 0.5233516483516484,
+        "f1_macro": 0.5075803264541626,
+        "auc_macro_ovr": 0.6996371425025935,
+        "mae": 0.7359666228294373,
+        "pearson": 0.47374916574681747
+      },
+      "text_1segment_start": {
+        "accuracy": 0.4478021978021978,
+        "f1_macro": 0.4375660930439425,
+        "auc_macro_ovr": 0.6344519149279337,
+        "mae": 0.7851205468177795,
+        "pearson": 0.2809705885908493
+      },
+      "text_1segment_middle": {
+        "accuracy": 0.46565934065934067,
+        "f1_macro": 0.4600617915188965,
+        "auc_macro_ovr": 0.6413450997649544,
+        "mae": 0.7622007727622986,
+        "pearson": 0.3707562205828311
+      },
+      "text_1segment_end": {
+        "accuracy": 0.45604395604395603,
+        "f1_macro": 0.45179076381902145,
+        "auc_macro_ovr": 0.6611969226013276,
+        "mae": 0.7444291710853577,
+        "pearson": 0.4233208916460751
+      }
+    },
+    "augmented_fusion": {
+      "clean": {
+        "accuracy": 0.5151098901098901,
+        "f1_macro": 0.5043129936672113,
+        "auc_macro_ovr": 0.7056202838255806,
+        "mae": 0.7649474143981934,
+        "pearson": 0.40403441879765045
+      },
+      "audio_25pct_start": {
+        "accuracy": 0.49313186813186816,
+        "f1_macro": 0.4849744245524296,
+        "auc_macro_ovr": 0.7018241405554183,
+        "mae": 0.7628343105316162,
+        "pearson": 0.40636431565439624
+      },
+      "audio_25pct_middle": {
+        "accuracy": 0.5260989010989011,
+        "f1_macro": 0.514820201644338,
+        "auc_macro_ovr": 0.7045017023936362,
+        "mae": 0.7728875875473022,
+        "pearson": 0.4016072962802227
+      },
+      "audio_25pct_end": {
+        "accuracy": 0.5260989010989011,
+        "f1_macro": 0.520054613426001,
+        "auc_macro_ovr": 0.7174078718648588,
+        "mae": 0.722269594669342,
+        "pearson": 0.5043260916211767
+      },
+      "vision_25pct_start": {
+        "accuracy": 0.5068681318681318,
+        "f1_macro": 0.499340173257054,
+        "auc_macro_ovr": 0.7062705858391488,
+        "mae": 0.765642523765564,
+        "pearson": 0.40335731643777395
+      },
+      "vision_25pct_middle": {
+        "accuracy": 0.5123626373626373,
+        "f1_macro": 0.5005664801328406,
+        "auc_macro_ovr": 0.7049375163893417,
+        "mae": 0.7679521441459656,
+        "pearson": 0.40295855282790577
+      },
+      "vision_25pct_end": {
+        "accuracy": 0.5137362637362637,
+        "f1_macro": 0.502480779605989,
+        "auc_macro_ovr": 0.7025133442755988,
+        "mae": 0.765087366104126,
+        "pearson": 0.40233843097218264
+      },
+      "text_1segment_start": {
+        "accuracy": 0.45879120879120877,
+        "f1_macro": 0.448958228922345,
+        "auc_macro_ovr": 0.646872256695994,
+        "mae": 0.8014429211616516,
+        "pearson": 0.24523065262818863
+      },
+      "text_1segment_middle": {
+        "accuracy": 0.4642857142857143,
+        "f1_macro": 0.4541082407930234,
+        "auc_macro_ovr": 0.653113930969994,
+        "mae": 0.7812207341194153,
+        "pearson": 0.3114157888008775
+      },
+      "text_1segment_end": {
+        "accuracy": 0.46291208791208793,
+        "f1_macro": 0.4542964336582027,
+        "auc_macro_ovr": 0.6656048494359991,
+        "mae": 0.7648340463638306,
+        "pearson": 0.34701557499948704
+      }
+    }
+  }
+}
