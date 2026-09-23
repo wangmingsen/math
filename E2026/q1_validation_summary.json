@@ -1,0 +1,16 @@
+{
+  "samples": 100,
+  "unique_ids": 100,
+  "label_ids_matched": 100,
+  "feature_files": 100,
+  "mapping_files": 100,
+  "totals": {
+    "feature_bytes": 824239,
+    "mapping_bytes": 1265728,
+    "word_count": 2166,
+    "text_bins": 1986,
+    "vision_bins": 5000
+  },
+  "problems": [],
+  "text_timing": "energy-weighted estimate; not forced alignment"
+}
