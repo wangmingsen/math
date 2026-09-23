@@ -1,0 +1,279 @@
+{
+  "attachment1": {
+    "video_count": 100,
+    "label_rows": 100,
+    "label_columns": [
+      "annotation",
+      "clip_id",
+      "label",
+      "text",
+      "video_id"
+    ],
+    "unique_video_keys": 100,
+    "unique_label_keys": 100,
+    "videos_without_label": [],
+    "labels_without_video": [],
+    "label_values": {
+      "Positive": 57,
+      "Neutral": 25,
+      "Negative": 18
+    }
+  },
+  "attachment2": {
+    "label_rows": 4850,
+    "label_columns": [
+      "annotation",
+      "clip_id",
+      "label",
+      "mode",
+      "text",
+      "video_id"
+    ],
+    "pickle_files_bytes": {
+      "aligned_50.pkl": 993842861,
+      "unaligned_50.pkl": 2897003035
+    },
+    "pickle_internal_structure": "not_loaded_due_to_memory_limit"
+  },
+  "specialty": {
+    "3": {
+      "对齐版本": {
+        "pickle_count": 30,
+        "video_count": 0,
+        "pickle_total_bytes": 1528260,
+        "field_patterns": {
+          "audio,text_bert,vision": 30
+        },
+        "first_sample": {
+          "file": "附件3_01.pkl",
+          "top_keys": [
+            "test"
+          ],
+          "fields": {
+            "text_bert": {
+              "type": "ndarray",
+              "shape": [
+                1,
+                3,
+                50
+              ]
+            },
+            "vision": {
+              "type": "ndarray",
+              "shape": [
+                1,
+                50,
+                35
+              ]
+            },
+            "audio": {
+              "type": "ndarray",
+              "shape": [
+                1,
+                50,
+                74
+              ]
+            }
+          },
+          "longest_all_zero_run": {
+            "vision": [
+              43
+            ],
+            "audio": [
+              43
+            ]
+          }
+        },
+        "load_errors": []
+      },
+      "未对齐版本": {
+        "pickle_count": 30,
+        "video_count": 0,
+        "pickle_total_bytes": 14843659,
+        "field_patterns": {
+          "audio,raw_text,vision": 30
+        },
+        "first_sample": {
+          "file": "附件3_未对齐版本_01.pkl",
+          "top_keys": [
+            "test"
+          ],
+          "fields": {
+            "raw_text": {
+              "type": "ndarray",
+              "shape": [
+                1
+              ]
+            },
+            "vision": {
+              "type": "ndarray",
+              "shape": [
+                1,
+                500,
+                35
+              ]
+            },
+            "audio": {
+              "type": "ndarray",
+              "shape": [
+                1,
+                500,
+                74
+              ]
+            }
+          },
+          "longest_all_zero_run": {
+            "vision": [
+              463
+            ],
+            "audio": [
+              451
+            ]
+          }
+        },
+        "load_errors": []
+      }
+    },
+    "4": {
+      "对齐版本": {
+        "pickle_count": 20,
+        "video_count": 20,
+        "pickle_total_bytes": 3987490,
+        "field_patterns": {
+          "audio,id,raw_text,text,text_bert,vision": 20
+        },
+        "first_sample": {
+          "file": "01.pkl",
+          "top_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "fields": {
+            "raw_text": {
+              "type": "str_",
+              "shape": []
+            },
+            "audio": {
+              "type": "ndarray",
+              "shape": [
+                50,
+                74
+              ]
+            },
+            "vision": {
+              "type": "ndarray",
+              "shape": [
+                50,
+                35
+              ]
+            },
+            "id": {
+              "type": "str",
+              "shape": null
+            },
+            "text": {
+              "type": "ndarray",
+              "shape": [
+                50,
+                768
+              ]
+            },
+            "text_bert": {
+              "type": "ndarray",
+              "shape": [
+                3,
+                50
+              ]
+            }
+          },
+          "longest_all_zero_run": {
+            "audio": [],
+            "vision": [],
+            "text": []
+          }
+        },
+        "load_errors": []
+      },
+      "未对齐版本": {
+        "pickle_count": 20,
+        "video_count": 20,
+        "pickle_total_bytes": 11836636,
+        "field_patterns": {
+          "audio,audio_lengths,id,raw_text,text,text_bert,vision,vision_lengths": 20
+        },
+        "first_sample": {
+          "file": "01.pkl",
+          "top_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert",
+            "audio_lengths",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "type": "str_",
+              "shape": []
+            },
+            "audio": {
+              "type": "ndarray",
+              "shape": [
+                500,
+                74
+              ]
+            },
+            "vision": {
+              "type": "ndarray",
+              "shape": [
+                500,
+                35
+              ]
+            },
+            "id": {
+              "type": "str",
+              "shape": null
+            },
+            "text": {
+              "type": "ndarray",
+              "shape": [
+                50,
+                768
+              ]
+            },
+            "text_bert": {
+              "type": "ndarray",
+              "shape": [
+                3,
+                50
+              ]
+            },
+            "audio_lengths": {
+              "type": "int",
+              "shape": null
+            },
+            "vision_lengths": {
+              "type": "int",
+              "shape": null
+            }
+          },
+          "longest_all_zero_run": {
+            "audio": [],
+            "vision": [],
+            "text": []
+          }
+        },
+        "load_errors": []
+      }
+    }
+  },
+  "environment": {
+    "numpy": "1.26.4"
+  }
+}
