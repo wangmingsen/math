@@ -1,0 +1,20 @@
+{
+  "reviewed": 21,
+  "manual_decisions": {
+    "match": 1,
+    "other": 7,
+    "mismatch": 12,
+    "offset": 1
+  },
+  "preliminary_dispositions": {
+    "reported_transcript_match_time_unverified": 1,
+    "reported_no_speech": 2,
+    "reported_transcript_mismatch": 12,
+    "needs_recheck": 2,
+    "reported_unverifiable": 3,
+    "no_speech_alignment_possible": 1
+  },
+  "needs_recheck": 2,
+  "word_audio_alignment_usable": 0,
+  "note": "Manual review is a reported observation; no transcript or word timestamp was silently replaced."
+}
