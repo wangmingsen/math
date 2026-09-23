@@ -1,0 +1,13 @@
+{
+  "reviewed_low_match": 21,
+  "source_video_ids": 7,
+  "fully_low_match_source_video_ids": 6,
+  "stereo_pcm_all_zero": 2,
+  "nonzero_audio_asr_too_few_words": 3,
+  "nonzero_audio_unresolved_low_match": 16,
+  "base_alignment_candidates": 0,
+  "other_same_source_label_similarity_ge_0_8": 0,
+  "model": "faster-whisper base.en CPU int8",
+  "manual_audio_review_completed": false,
+  "disposition": "keep original data and existing features; flag unreliable timing and queue manual review"
+}
