@@ -19,7 +19,8 @@ def main():
     labels={str(x['video_id'])+'$_$'+str(int(float(x['clip_id']))):x for x in excel_rows(label_file)}
     rows=list(csv.DictReader((root/'manifest.csv').open(encoding='utf-8-sig',newline='')))
     problems=[]
-    totals={'text_bins':0,'audio_bins':0,'face_bins':0,'words':0}
+    totals={'text_bins':0,'audio_bins':0,'face_bins':0,'words':0,
+            'asr_anchor_accepted':0,'asr_anchor_rejected':0}
     ids=[]
     for row in rows:
         sid=row['sample_id'];ids.append(sid)
@@ -36,7 +37,8 @@ def main():
             problems.append(sid+': misleading exact timing label remains')
         with np.load(root/row['feature_file']) as d:
             for key,shape in {'text_bert':(50,768),'audio_opensmile':(50,50),
-                              'vision_openface':(50,35),'time_edges_s':(51,)}.items():
+                              'vision_openface':(50,35),'time_edges_s':(51,),
+                              'text_sentence_bert':(768,)}.items():
                 if d[key].shape!=shape or not np.isfinite(d[key]).all():
                     problems.append(sid+': invalid '+key)
             edges=d['time_edges_s']
@@ -48,6 +50,14 @@ def main():
             counts=d['text_word_count']
             if sum(counts)!=len(actual) or not np.array_equal(counts>0,d['text_present']):
                 problems.append(sid+': text count/mask mismatch')
+            accepted=bool(d['asr_anchor_accepted'])
+            if accepted!=bool(mapping['alignment_quality']['accepted']) or accepted!=bool(mapping['asr_anchor_accepted']):
+                problems.append(sid+': ASR anchor status mismatch')
+            if mapping['speech_presence_review'] not in ('unknown','absent_silent_pcm'):
+                problems.append(sid+': invalid speech review status')
+            if not d['audio_signal_present'].any() and mapping['speech_presence_review']!='absent_silent_pcm':
+                problems.append(sid+': silent PCM review status mismatch')
+            totals['asr_anchor_accepted' if accepted else 'asr_anchor_rejected']+=1
             face=d['face_valid']
             if not np.array_equal(d['face_frame_count']>0,face) or np.any(d['vision_openface'][~face]!=0):
                 problems.append(sid+': face mask mismatch')

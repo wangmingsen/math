@@ -25,6 +25,8 @@ def main():
         sample=row['sample_id']; name=row['feature_file']
         if any(branch[key][sample]['status']!='ok' for key in branch):
             raise ValueError(f'{sample}: incomplete extraction')
+        mapping=json.loads((paths['source']/row['mapping_file']).read_text(encoding='utf-8'))
+        asr_anchor_accepted=bool(mapping['alignment_quality']['accepted'])
         with np.load(paths['source']/name) as old, \
              np.load(paths['bert']/name) as bert, \
              np.load(paths['smile']/name) as smile, \
@@ -42,11 +44,15 @@ def main():
             valid_face=face['face_valid'].astype(bool)
             if np.any(~valid_face & np.any(vision!=0,axis=1)):
                 raise ValueError(f'{sample}: invalid face bins are nonzero')
+            word_count=bert['word_count'].astype(np.int32)
+            sentence=(text*word_count[:,None]).sum(axis=0)/max(1,int(word_count.sum()))
             np.savez_compressed(a.out/name,text_bert=text,audio_opensmile=audio,
-                                vision_openface=vision,time_edges_s=edges,
+                                vision_openface=vision,text_sentence_bert=sentence.astype(np.float32),
+                                time_edges_s=edges,
                                 text_present=bert['text_present'],
+                                asr_anchor_accepted=np.bool_(asr_anchor_accepted),
                                 audio_signal_present=signal,face_valid=valid_face,
-                                text_word_count=bert['word_count'],
+                                text_word_count=word_count,
                                 audio_frame_count=smile['frame_count'],
                                 face_frame_count=face['face_frame_count'],
                                 face_confidence=face['face_confidence'])
@@ -54,9 +60,11 @@ def main():
                            'mapping_file':row['mapping_file'],
                            'duration_s':row['duration_s'],
                            'text_bins':int(bert['text_present'].sum()),
+                           'asr_anchor_accepted':asr_anchor_accepted,
                            'audio_signal_bins':int(signal.sum()),
                            'face_bins':int(valid_face.sum()),'status':'ok'})
-        mapping=json.loads((paths['source']/row['mapping_file']).read_text(encoding='utf-8'))
+        mapping['asr_anchor_accepted']=asr_anchor_accepted
+        mapping['speech_presence_review']='unknown' if int(signal.sum()) else 'absent_silent_pcm'
         for word in mapping['words']:
             if word.get('timing')=='asr_exact_word_anchor':
                 word['timing']='asr_midpoint_derived_estimate'
@@ -77,6 +85,8 @@ def main():
              'silent_samples':sum(x['audio_signal_bins']==0 for x in report),
              'no_face_samples':sum(x['face_bins']==0 for x in report),
              'text_present_bins':sum(x['text_bins'] for x in report),
+             'asr_anchor_accepted_samples':sum(x['asr_anchor_accepted'] for x in report),
+             'asr_anchor_rejected_samples':sum(not x['asr_anchor_accepted'] for x in report),
              'audio_signal_bins':sum(x['audio_signal_bins'] for x in report),
              'face_valid_bins':sum(x['face_bins'] for x in report),
              'source_alignment':'Q1 v2 estimated transcript word times; not forced-alignment truth'}

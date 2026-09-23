@@ -8,7 +8,9 @@
     "text_bins": 2057,
     "audio_bins": 4900,
     "face_bins": 4612,
-    "words": 2166
+    "words": 2166,
+    "asr_anchor_accepted": 79,
+    "asr_anchor_rejected": 21
   },
   "problems": []
 }
