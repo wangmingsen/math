@@ -1,0 +1,121 @@
+{
+  "aligned_split_sizes": {
+    "train": 3395,
+    "valid": 728,
+    "test": 727
+  },
+  "split_unique_ids": {
+    "train": 3395,
+    "valid": 728,
+    "test": 727
+  },
+  "a1_ids_overlap_a2": 18,
+  "a1_ids_overlap_by_split": {
+    "train": 11,
+    "valid": 0,
+    "test": 7
+  },
+  "bert_valid_length": {
+    "min": 3,
+    "median": 22.0,
+    "max": 50
+  },
+  "train_zero_patterns": {
+    "text": {
+      "t0_zero_fraction": 0.0,
+      "samples_any_zero_on_bert_valid": 0,
+      "samples_any_zero_after_t0_on_bert_valid": 0,
+      "zero_rows_on_bert_valid": 0,
+      "nonzero_rows_on_bert_padding": 86078
+    },
+    "audio": {
+      "t0_zero_fraction": 1.0,
+      "samples_any_zero_on_bert_valid": 3395,
+      "samples_any_zero_after_t0_on_bert_valid": 3395,
+      "zero_rows_on_bert_valid": 6855,
+      "nonzero_rows_on_bert_padding": 0
+    },
+    "vision": {
+      "t0_zero_fraction": 1.0,
+      "samples_any_zero_on_bert_valid": 3395,
+      "samples_any_zero_after_t0_on_bert_valid": 3395,
+      "zero_rows_on_bert_valid": 11039,
+      "nonzero_rows_on_bert_padding": 0
+    }
+  },
+  "class_vs_reg_sign": {
+    "train": {
+      "2:positive": 1670,
+      "0:negative": 967,
+      "1:neutral": 758
+    },
+    "valid": {
+      "2:positive": 338,
+      "1:neutral": 184,
+      "0:negative": 206
+    },
+    "test": {
+      "2:positive": 362,
+      "0:negative": 207,
+      "1:neutral": 158
+    }
+  },
+  "specialty": {
+    "3": {
+      "对齐版本": {
+        "files": 30,
+        "field_patterns": {
+          "audio,text_bert,vision": 30
+        },
+        "ids_present": 0,
+        "unique_ids": 0,
+        "nonzero_t0_count": {
+          "audio": 0,
+          "vision": 0
+        },
+        "sample_id": null
+      },
+      "未对齐版本": {
+        "files": 30,
+        "field_patterns": {
+          "audio,raw_text,vision": 30
+        },
+        "ids_present": 0,
+        "unique_ids": 0,
+        "nonzero_t0_count": {
+          "audio": 27,
+          "vision": 24
+        },
+        "sample_id": null
+      }
+    },
+    "4": {
+      "对齐版本": {
+        "files": 20,
+        "field_patterns": {
+          "audio,id,raw_text,text,text_bert,vision": 20
+        },
+        "ids_present": 20,
+        "unique_ids": 20,
+        "nonzero_t0_count": {
+          "audio": 0,
+          "vision": 0
+        },
+        "sample_id": "01"
+      },
+      "未对齐版本": {
+        "files": 20,
+        "field_patterns": {
+          "audio,audio_lengths,id,raw_text,text,text_bert,vision,vision_lengths": 20
+        },
+        "ids_present": 20,
+        "unique_ids": 20,
+        "nonzero_t0_count": {
+          "audio": 20,
+          "vision": 20
+        },
+        "sample_id": "01"
+      }
+    }
+  }
+}
