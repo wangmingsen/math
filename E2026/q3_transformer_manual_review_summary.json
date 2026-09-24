@@ -1,0 +1,26 @@
+{
+  "source_file": "q3_transformer_explanation_review.csv",
+  "source_sha256": "b6ac7be7e3013188c3e7417cad1c48baa4749c21657dcb269cd3dc4f2f3dc29c",
+  "rows": 20,
+  "unique_ids": 20,
+  "decision_counts": {
+    "supports": 19,
+    "contradicts": 1
+  },
+  "notes_nonempty": 0,
+  "contradiction_cases": [
+    {
+      "sample_id": "15",
+      "review_note_present": false,
+      "predicted_polarity": 2,
+      "predicted_intensity": 1.4370309114456177,
+      "predicted_class_probability": 0.9180015921592712,
+      "primary_reference_modality": "text",
+      "text_support_share": 0.9917465839971825,
+      "time_mapping_quality": "unverified",
+      "asr_exact_match_fraction": 0.2353,
+      "asr_anchor_accepted": false
+    }
+  ],
+  "interpretation": "Subjective human video review of overall prediction and local positions; not ground-truth test accuracy."
+}
