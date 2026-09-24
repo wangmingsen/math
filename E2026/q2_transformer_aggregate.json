@@ -1,0 +1,268 @@
+{
+  "date": "2026-09-24",
+  "representation": "aligned_50 only",
+  "contract": {
+    "vocab_size": 30522,
+    "special_ids": {
+      "[PAD]": 0,
+      "[UNK]": 100,
+      "[CLS]": 101,
+      "[SEP]": 102,
+      "[MASK]": 103
+    },
+    "splits": {
+      "train": {
+        "samples": 3395,
+        "tokenizer_exact_or_truncated_prefix_match": 3395,
+        "raw_text_over_50_tokens": 234,
+        "text_padding_mask_ok": 3395,
+        "token_id_and_special_token_ok": 3395,
+        "audio_all_zero": 0,
+        "vision_all_zero": 110,
+        "audio_interior_zero": 0,
+        "vision_interior_zero": 146,
+        "audio_trailing_zero_rows": 89473,
+        "vision_trailing_zero_rows": 86611
+      },
+      "valid": {
+        "samples": 728,
+        "tokenizer_exact_or_truncated_prefix_match": 728,
+        "raw_text_over_50_tokens": 44,
+        "text_padding_mask_ok": 728,
+        "token_id_and_special_token_ok": 728,
+        "audio_all_zero": 0,
+        "vision_all_zero": 15,
+        "audio_interior_zero": 0,
+        "vision_interior_zero": 43,
+        "audio_trailing_zero_rows": 18500,
+        "vision_trailing_zero_rows": 18325
+      },
+      "test": {
+        "samples": 727,
+        "tokenizer_exact_or_truncated_prefix_match": 727,
+        "raw_text_over_50_tokens": 49,
+        "text_padding_mask_ok": 727,
+        "token_id_and_special_token_ok": 727,
+        "audio_all_zero": 0,
+        "vision_all_zero": 28,
+        "audio_interior_zero": 0,
+        "vision_interior_zero": 41,
+        "audio_trailing_zero_rows": 18768,
+        "vision_trailing_zero_rows": 18055
+      },
+      "A3": {
+        "samples": 30,
+        "token_id_and_special_token_ok": 30,
+        "text_padding_mask_ok": 30,
+        "audio_all_zero": 0,
+        "vision_all_zero": 0,
+        "audio_interior_zero": 27,
+        "vision_interior_zero": 27
+      }
+    },
+    "A3_no_raw_text": "Cannot retokenize A3; validate numeric token ID domain, special IDs and attention mask only."
+  },
+  "selection": {
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "classification": "teacher_mean3",
+    "regression": "teacher_student_mean6",
+    "clean_class_metrics": {
+      "accuracy": 0.6263736263736264,
+      "f1_macro": 0.5993629409530787,
+      "f1_by_class": {
+        "0": 0.6636155606407322,
+        "1": 0.44047619047619047,
+        "2": 0.6939970717423133
+      },
+      "auc_macro_ovr": 0.7893508069126405,
+      "mae": 0.6016970872879028,
+      "pearson": 0.6350452049533459
+    },
+    "clean_regression_metrics": {
+      "accuracy": 0.6222527472527473,
+      "f1_macro": 0.5948476165618809,
+      "f1_by_class": {
+        "0": 0.6542056074766355,
+        "1": 0.4365781710914454,
+        "2": 0.6937590711175616
+      },
+      "auc_macro_ovr": 0.7902817766193747,
+      "mae": 0.5989649295806885,
+      "pearson": 0.6360131720600097
+    },
+    "dual_class_metrics": {
+      "accuracy": 0.6208791208791209,
+      "f1_macro": 0.5918214855502657,
+      "f1_by_class": {
+        "0": 0.6558139534883721,
+        "1": 0.42900302114803623,
+        "2": 0.6906474820143885
+      },
+      "auc_macro_ovr": 0.7877877687578437,
+      "mae": 0.6033229827880859,
+      "pearson": 0.6363784529600522
+    },
+    "dual_regression_metrics": {
+      "accuracy": 0.6181318681318682,
+      "f1_macro": 0.591299426875005,
+      "f1_by_class": {
+        "0": 0.645933014354067,
+        "1": 0.43731778425655976,
+        "2": 0.6906474820143885
+      },
+      "auc_macro_ovr": 0.7892423669563485,
+      "mae": 0.5986423492431641,
+      "pearson": 0.6376374563003924
+    }
+  },
+  "stress": {
+    "scenario_count": 169,
+    "examples": {
+      "clean": {
+        "metrics": {
+          "accuracy": 0.6263736263736264,
+          "f1_macro": 0.5993629409530787,
+          "f1_by_class": [
+            0.6636155606407322,
+            0.44047619047619047,
+            0.6939970717423133
+          ],
+          "mae": 0.5989649295806885,
+          "pearson": 0.6360131720600097
+        },
+        "injection": {},
+        "all_unavailable_count": 0
+      },
+      "T_10_middle_1block": {
+        "metrics": {
+          "accuracy": 0.5741758241758241,
+          "f1_macro": 0.5432341548563469,
+          "f1_by_class": [
+            0.583710407239819,
+            0.3890577507598784,
+            0.656934306569343
+          ],
+          "mae": 0.6337931156158447,
+          "pearson": 0.5765148670922061
+        },
+        "injection": {
+          "text": {
+            "eligible": 2088,
+            "planned": 728,
+            "changed_original_nonzero": 728,
+            "actual_changed_rate": 0.3486590038314176
+          }
+        },
+        "all_unavailable_count": 0
+      },
+      "AV_40_middle_1block": {
+        "metrics": {
+          "accuracy": 0.6222527472527473,
+          "f1_macro": 0.5944011828586322,
+          "f1_by_class": [
+            0.647887323943662,
+            0.4417910447761194,
+            0.6935251798561151
+          ],
+          "mae": 0.6018154621124268,
+          "pearson": 0.6330981278375019
+        },
+        "injection": {
+          "audio": {
+            "eligible": 17126,
+            "planned": 6844,
+            "changed_original_nonzero": 6844,
+            "actual_changed_rate": 0.3996262991942076
+          },
+          "vision": {
+            "eligible": 16192,
+            "planned": 6547,
+            "changed_original_nonzero": 6448,
+            "actual_changed_rate": 0.39822134387351776
+          }
+        },
+        "all_unavailable_count": 0
+      },
+      "TAV_60_middle_2block": {
+        "metrics": {
+          "accuracy": 0.5631868131868132,
+          "f1_macro": 0.5250973867878591,
+          "f1_by_class": [
+            0.5445544554455446,
+            0.375,
+            0.6557377049180327
+          ],
+          "mae": 0.6523150205612183,
+          "pearson": 0.5500605800182782
+        },
+        "injection": {
+          "text": {
+            "eligible": 2088,
+            "planned": 1227,
+            "changed_original_nonzero": 1227,
+            "actual_changed_rate": 0.5876436781609196
+          },
+          "audio": {
+            "eligible": 17126,
+            "planned": 10286,
+            "changed_original_nonzero": 10286,
+            "actual_changed_rate": 0.6006072638094125
+          },
+          "vision": {
+            "eligible": 16192,
+            "planned": 9843,
+            "changed_original_nonzero": 9723,
+            "actual_changed_rate": 0.600481719367589
+          }
+        },
+        "all_unavailable_count": 4
+      }
+    },
+    "text_granularity_warning": "Five pooled text segments: actual_changed_rate may greatly exceed requested 10% or 20%."
+  },
+  "A3_summary": {
+    "samples": 30,
+    "class_counts": {
+      "0": 7,
+      "1": 7,
+      "2": 16
+    },
+    "all_unavailable_prior": 0,
+    "polarity_intensity_flags": 0,
+    "neutral_large_strength_flags": 0,
+    "label_status": "A3 labels not supplied; no A3 performance metrics",
+    "representation": "aligned_50 throughout"
+  },
+  "test_status": "Not reevaluated for this new candidate; old Q2 candidate already used A2 test once.",
+  "paired_valid_comparison": {
+    "protocol": "Same A2 valid IDs; frozen old/new candidates; 2000 paired bootstrap resamples, seed 20260924",
+    "samples": 728,
+    "old": {
+      "f1_macro": 0.5773191249565406,
+      "auc_macro_ovr": 0.7640482678025249,
+      "mae": 0.6439578533172607
+    },
+    "new": {
+      "f1_macro": 0.5993629409530787,
+      "auc_macro_ovr": 0.7893508069126405,
+      "mae": 0.5989649295806885
+    },
+    "delta_new_minus_old": {
+      "f1_macro": 0.022043815996538152,
+      "f1_95pct_percentile_ci": [
+        -0.012720288776487195,
+        0.05696535545219475
+      ],
+      "mae": -0.044992923736572266,
+      "mae_95pct_percentile_ci": [
+        -0.06914610564708709,
+        -0.019402629137039225
+      ]
+    },
+    "limitation": "Valid data selected the new model; bootstrap intervals describe sampling variability, not an untouched test result."
+  }
+}
