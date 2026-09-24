@@ -1,0 +1,301 @@
+﻿sample_id,modality,position_start,position_end_exclusive,observed_positions,class_confidence_drop,intensity_change_signed,text_excerpt,estimated_start_s,estimated_end_s,time_quality
+01,text,0,10,9,0.0977276861667633,-0.0762588381767273,Replacing these wear components when replacing the timing belt,0.0,3.175,asr_estimate
+01,text,10,20,10,0.06412971019744873,0.20922207832336426,is essential to ensuring the new belt performs to its,3.175,7.1,asr_estimate
+01,text,20,30,3,0.07004141807556152,-0.02884349226951599,mileage requirements,7.1,9.0,asr_estimate
+01,text,30,40,0,0.0,0.0,,,,no_text_position
+01,text,40,50,0,0.0,0.0,,,,no_text_position
+01,audio,0,10,9,-0.061337947845458984,0.038519471883773804,Replacing these wear components when replacing the timing belt,0.0,3.175,asr_estimate
+01,audio,10,20,10,-0.012641310691833496,-0.01249152421951294,is essential to ensuring the new belt performs to its,3.175,7.1,asr_estimate
+01,audio,20,30,3,-0.0028228759765625,-0.012503087520599365,mileage requirements,7.1,9.0,asr_estimate
+01,audio,30,40,0,0.0,0.0,,,,no_text_position
+01,audio,40,50,0,0.0,0.0,,,,no_text_position
+01,vision,0,10,9,-0.008807778358459473,-0.018618404865264893,Replacing these wear components when replacing the timing belt,0.0,3.175,asr_estimate
+01,vision,10,20,10,-0.020565271377563477,-0.006072133779525757,is essential to ensuring the new belt performs to its,3.175,7.1,asr_estimate
+01,vision,20,30,3,-0.042110323905944824,0.01770251989364624,mileage requirements,7.1,9.0,asr_estimate
+01,vision,30,40,0,0.0,0.0,,,,no_text_position
+01,vision,40,50,0,0.0,0.0,,,,no_text_position
+02,text,0,10,9,-0.16441577672958374,0.49795177578926086,We want to live by each other’s,0.0,1.4325,asr_estimate
+02,text,10,20,10,0.16693884134292603,-0.19968830421566963,happiness - not by each other’s misery.,1.4325,3.492969,asr_estimate
+02,text,20,30,0,0.0,0.0,,,,no_text_position
+02,text,30,40,0,0.0,0.0,,,,no_text_position
+02,text,40,50,0,0.0,0.0,,,,no_text_position
+02,audio,0,10,9,-2.3245811462402344e-06,-0.03539440035820007,We want to live by each other’s,0.0,1.4325,asr_estimate
+02,audio,10,20,10,-0.003325343132019043,-0.024767115712165833,happiness - not by each other’s misery.,1.4325,3.492969,asr_estimate
+02,audio,20,30,0,0.0,0.0,,,,no_text_position
+02,audio,30,40,0,0.0,0.0,,,,no_text_position
+02,audio,40,50,0,0.0,0.0,,,,no_text_position
+02,vision,0,10,9,0.056509315967559814,-0.10594932734966278,We want to live by each other’s,0.0,1.4325,asr_estimate
+02,vision,10,20,10,0.05786287784576416,-0.1004774272441864,happiness - not by each other’s misery.,1.4325,3.492969,asr_estimate
+02,vision,20,30,0,0.0,0.0,,,,no_text_position
+02,vision,30,40,0,0.0,0.0,,,,no_text_position
+02,vision,40,50,0,0.0,0.0,,,,no_text_position
+03,text,0,10,9,-0.007930576801300049,-0.018651634454727173,There's one lender at the moment,0.0,2.0300000000000002,asr_estimate
+03,text,10,20,10,0.050761640071868896,-0.1152946725487709,which I think is just Bankwest who don't,2.0300000000000002,4.635,asr_estimate
+03,text,20,30,10,0.1486910879611969,-0.25331988371908665,"don't take rental income into account, they take rental",4.254999999999999,7.58,asr_estimate
+03,text,30,40,4,-0.07502061128616333,0.14711864292621613,yield into account.,7.58,9.663997,asr_estimate
+03,text,40,50,0,0.0,0.0,,,,no_text_position
+03,audio,0,10,9,0.003235459327697754,0.017406225204467773,There's one lender at the moment,0.0,2.0300000000000002,asr_estimate
+03,audio,10,20,10,-0.025259852409362793,0.058201029896736145,which I think is just Bankwest who don't,2.0300000000000002,4.635,asr_estimate
+03,audio,20,30,10,-0.03319418430328369,0.02531273663043976,"don't take rental income into account, they take rental",4.254999999999999,7.58,asr_estimate
+03,audio,30,40,4,0.024632155895233154,-0.019617408514022827,yield into account.,7.58,9.663997,asr_estimate
+03,audio,40,50,0,0.0,0.0,,,,no_text_position
+03,vision,0,10,9,0.0003197789192199707,0.010791465640068054,There's one lender at the moment,0.0,2.0300000000000002,asr_estimate
+03,vision,10,20,10,-0.0005761384963989258,0.017092272639274597,which I think is just Bankwest who don't,2.0300000000000002,4.635,asr_estimate
+03,vision,20,30,10,-0.010220050811767578,0.03272773325443268,"don't take rental income into account, they take rental",4.254999999999999,7.58,asr_estimate
+03,vision,30,40,4,-0.021579325199127197,0.05009277164936066,yield into account.,7.58,9.663997,asr_estimate
+03,vision,40,50,0,0.0,0.0,,,,no_text_position
+04,text,0,10,9,-0.011362552642822266,0.007219430059194565,"If I blow it at the team exercise,",0.0,2.01,asr_estimate
+04,text,10,20,10,0.05900821089744568,-0.09622231125831604,"should I kiss my chances of cheering ""GO BLUE",2.01,4.1425,asr_estimate
+04,text,20,30,7,0.3420454412698746,-0.8294427543878555,""" goodbye?] Absolutely not.",4.1425,6.99401,asr_estimate
+04,text,30,40,0,0.0,0.0,,,,no_text_position
+04,text,40,50,0,0.0,0.0,,,,no_text_position
+04,audio,0,10,9,-0.046439170837402344,0.17428094148635864,"If I blow it at the team exercise,",0.0,2.01,asr_estimate
+04,audio,10,20,10,-0.06532204151153564,0.1601904258131981,"should I kiss my chances of cheering ""GO BLUE",2.01,4.1425,asr_estimate
+04,audio,20,30,7,-0.07831215858459473,0.20411501824855804,""" goodbye?] Absolutely not.",4.1425,6.99401,asr_estimate
+04,audio,30,40,0,0.0,0.0,,,,no_text_position
+04,audio,40,50,0,0.0,0.0,,,,no_text_position
+04,vision,0,10,9,-0.04847997426986694,0.07917511835694313,"If I blow it at the team exercise,",0.0,2.01,asr_estimate
+04,vision,10,20,10,-0.03277242183685303,0.18805624544620514,"should I kiss my chances of cheering ""GO BLUE",2.01,4.1425,asr_estimate
+04,vision,20,30,7,-0.07548177242279053,0.14247126132249832,""" goodbye?] Absolutely not.",4.1425,6.99401,asr_estimate
+04,vision,30,40,0,0.0,0.0,,,,no_text_position
+04,vision,40,50,0,0.0,0.0,,,,no_text_position
+05,text,0,10,9,0.05946439504623413,0.11466813087463379,"Hi, my name is Chloe, video marketer",0.0,3.9299999999999997,asr_estimate
+05,text,10,20,6,-0.03399175405502319,-0.057840049266815186,marketer for Red Wagon Marketing.,3.4699999999999998,6.1,asr_estimate
+05,text,20,30,0,0.0,0.0,,,,no_text_position
+05,text,30,40,0,0.0,0.0,,,,no_text_position
+05,text,40,50,0,0.0,0.0,,,,no_text_position
+05,audio,0,10,9,-0.009975612163543701,-0.09811437129974365,"Hi, my name is Chloe, video marketer",0.0,3.9299999999999997,asr_estimate
+05,audio,10,20,6,-0.009616374969482422,-0.08441656827926636,marketer for Red Wagon Marketing.,3.4699999999999998,6.1,asr_estimate
+05,audio,20,30,0,0.0,0.0,,,,no_text_position
+05,audio,30,40,0,0.0,0.0,,,,no_text_position
+05,audio,40,50,0,0.0,0.0,,,,no_text_position
+05,vision,0,10,9,0.09633642435073853,0.27284348011016846,"Hi, my name is Chloe, video marketer",0.0,3.9299999999999997,asr_estimate
+05,vision,10,20,6,0.024220407009124756,0.060002684593200684,marketer for Red Wagon Marketing.,3.4699999999999998,6.1,asr_estimate
+05,vision,20,30,0,0.0,0.0,,,,no_text_position
+05,vision,30,40,0,0.0,0.0,,,,no_text_position
+05,vision,40,50,0,0.0,0.0,,,,no_text_position
+06,text,0,10,9,0.13558128476142883,0.11789071559906006,If you're a fan of dancing in,0.0,1.51,asr_estimate
+06,text,10,20,10,0.08097028732299805,0.08161497116088867,"that sense, just like to watch people dance,",1.51,3.6425,asr_estimate
+06,text,20,30,10,0.08238226175308228,0.07868266105651855,see impressive dance moves then you might want to check,3.6425,6.24,asr_estimate
+06,text,30,40,6,0.042687058448791504,0.04886472225189209,out this movie solely for that,6.24,8.305013,asr_estimate
+06,text,40,50,0,0.0,0.0,,,,no_text_position
+06,audio,0,10,9,-0.020867884159088135,-0.025041401386260986,If you're a fan of dancing in,0.0,1.51,asr_estimate
+06,audio,10,20,10,-0.03939473628997803,-0.04882669448852539,"that sense, just like to watch people dance,",1.51,3.6425,asr_estimate
+06,audio,20,30,10,-0.060746848583221436,-0.05536925792694092,see impressive dance moves then you might want to check,3.6425,6.24,asr_estimate
+06,audio,30,40,6,-0.055186688899993896,-0.06954479217529297,out this movie solely for that,6.24,8.305013,asr_estimate
+06,audio,40,50,0,0.0,0.0,,,,no_text_position
+06,vision,0,10,9,-0.01853334903717041,-0.022459447383880615,If you're a fan of dancing in,0.0,1.51,asr_estimate
+06,vision,10,20,10,-0.03267467021942139,-0.044646620750427246,"that sense, just like to watch people dance,",1.51,3.6425,asr_estimate
+06,vision,20,30,10,-0.015735328197479248,-0.018107235431671143,see impressive dance moves then you might want to check,3.6425,6.24,asr_estimate
+06,vision,30,40,6,-0.006565272808074951,-0.0029256343841552734,out this movie solely for that,6.24,8.305013,asr_estimate
+06,vision,40,50,0,0.0,0.0,,,,no_text_position
+07,text,0,10,9,-0.057825565338134766,-0.060395121574401855,As Linn’s associate editor Michael Baadke,0.0,2.2600000000000002,asr_estimate
+07,text,10,20,10,-0.003570854663848877,-0.011404156684875488,"Baadke reports in our November 28 issue, attendees",1.8800000000000001,5.195,asr_estimate
+07,text,20,30,10,0.15318408608436584,0.19077283143997192,"“enthusiastically discussed the topics of growing the hobby,",5.195,9.7625,asr_estimate
+07,text,30,40,10,0.005872607231140137,0.023438215255737305,"the future of stamp shows, and dealers and philatelic",9.7625,12.76,asr_estimate
+07,text,40,50,9,0.007852375507354736,0.020549297332763672,"philatelic partnerships, along with ways the leading",12.309999999999999,15.32,asr_estimate
+07,audio,0,10,9,-0.005962371826171875,-0.0176011323928833,As Linn’s associate editor Michael Baadke,0.0,2.2600000000000002,asr_estimate
+07,audio,10,20,10,0.009338021278381348,-0.00021314620971679688,"Baadke reports in our November 28 issue, attendees",1.8800000000000001,5.195,asr_estimate
+07,audio,20,30,10,0.01372528076171875,0.007613420486450195,"“enthusiastically discussed the topics of growing the hobby,",5.195,9.7625,asr_estimate
+07,audio,30,40,10,-0.027367353439331055,-0.02828037738800049,"the future of stamp shows, and dealers and philatelic",9.7625,12.76,asr_estimate
+07,audio,40,50,9,-0.016201257705688477,-0.012777090072631836,"philatelic partnerships, along with ways the leading",12.309999999999999,15.32,asr_estimate
+07,vision,0,10,9,-0.03465670347213745,-0.047359347343444824,As Linn’s associate editor Michael Baadke,0.0,2.2600000000000002,asr_estimate
+07,vision,10,20,10,-0.00715869665145874,-0.012418627738952637,"Baadke reports in our November 28 issue, attendees",1.8800000000000001,5.195,asr_estimate
+07,vision,20,30,10,-0.00972074270248413,-0.012034714221954346,"“enthusiastically discussed the topics of growing the hobby,",5.195,9.7625,asr_estimate
+07,vision,30,40,10,0.01710808277130127,0.01735103130340576,"the future of stamp shows, and dealers and philatelic",9.7625,12.76,asr_estimate
+07,vision,40,50,9,0.009598731994628906,0.014988243579864502,"philatelic partnerships, along with ways the leading",12.309999999999999,15.32,asr_estimate
+08,text,0,10,9,0.20630237460136414,0.2692889869213104,"That brings us to tonight, the Universal Design",0.0,2.8149999999999995,asr_estimate
+08,text,10,20,2,0.04838395118713379,0.15182289481163025,Grand Challenge,2.8149999999999995,5.086003,asr_estimate
+08,text,20,30,0,0.0,0.0,,,,no_text_position
+08,text,30,40,0,0.0,0.0,,,,no_text_position
+08,text,40,50,0,0.0,0.0,,,,no_text_position
+08,audio,0,10,9,-0.049673259258270264,-0.09507489204406738,"That brings us to tonight, the Universal Design",0.0,2.8149999999999995,asr_estimate
+08,audio,10,20,2,-0.036913275718688965,-0.05423468351364136,Grand Challenge,2.8149999999999995,5.086003,asr_estimate
+08,audio,20,30,0,0.0,0.0,,,,no_text_position
+08,audio,30,40,0,0.0,0.0,,,,no_text_position
+08,audio,40,50,0,0.0,0.0,,,,no_text_position
+08,vision,0,10,9,-0.06016796827316284,-0.09343105554580688,"That brings us to tonight, the Universal Design",0.0,2.8149999999999995,asr_estimate
+08,vision,10,20,2,-0.025886118412017822,-0.060960233211517334,Grand Challenge,2.8149999999999995,5.086003,asr_estimate
+08,vision,20,30,0,0.0,0.0,,,,no_text_position
+08,vision,30,40,0,0.0,0.0,,,,no_text_position
+08,vision,40,50,0,0.0,0.0,,,,no_text_position
+09,text,0,10,9,0.01761007308959961,-0.264288067817688,(uhh) I did not like this,0.0,1.75,asr_estimate
+09,text,10,20,9,0.06428307294845581,-0.6380211114883423,"movie at all, I would not recommend it",1.75,5.041992,asr_estimate
+09,text,20,30,0,0.0,0.0,,,,no_text_position
+09,text,30,40,0,0.0,0.0,,,,no_text_position
+09,text,40,50,0,0.0,0.0,,,,no_text_position
+09,audio,0,10,9,-0.004246711730957031,0.08195304870605469,(uhh) I did not like this,0.0,1.75,asr_estimate
+09,audio,10,20,9,-0.005755901336669922,0.12756073474884033,"movie at all, I would not recommend it",1.75,5.041992,asr_estimate
+09,audio,20,30,0,0.0,0.0,,,,no_text_position
+09,audio,30,40,0,0.0,0.0,,,,no_text_position
+09,audio,40,50,0,0.0,0.0,,,,no_text_position
+09,vision,0,10,9,0.002860128879547119,0.013444185256958008,(uhh) I did not like this,0.0,1.75,asr_estimate
+09,vision,10,20,9,-0.0007777810096740723,0.04003763198852539,"movie at all, I would not recommend it",1.75,5.041992,asr_estimate
+09,vision,20,30,0,0.0,0.0,,,,no_text_position
+09,vision,30,40,0,0.0,0.0,,,,no_text_position
+09,vision,40,50,0,0.0,0.0,,,,no_text_position
+10,text,0,10,9,-0.004210829734802246,0.06718134880065918,(umm) And you know I really do,0.0,2.4,asr_estimate
+10,text,10,20,10,-0.008143126964569092,0.029036641120910645,like to see fluffy chick flicks sometimes so I'm,2.4,5.27,asr_estimate
+10,text,20,30,10,0.048697471618652344,-0.30729472637176514,I'm not against that but this one was pretty,5.069999999999999,8.35,asr_estimate
+10,text,30,40,1,0.13964855670928955,-0.8390069007873535,terrible,8.35,9.939974,asr_estimate
+10,text,40,50,0,0.0,0.0,,,,no_text_position
+10,audio,0,10,9,-0.006173372268676758,0.11490917205810547,(umm) And you know I really do,0.0,2.4,asr_estimate
+10,audio,10,20,10,-0.0041484832763671875,0.0850670337677002,like to see fluffy chick flicks sometimes so I'm,2.4,5.27,asr_estimate
+10,audio,20,30,10,-0.011054039001464844,0.13885951042175293,I'm not against that but this one was pretty,5.069999999999999,8.35,asr_estimate
+10,audio,30,40,1,-0.00804823637008667,0.12436652183532715,terrible,8.35,9.939974,asr_estimate
+10,audio,40,50,0,0.0,0.0,,,,no_text_position
+10,vision,0,10,9,0.0007041692733764648,-0.0006393194198608398,(umm) And you know I really do,0.0,2.4,asr_estimate
+10,vision,10,20,10,-0.004688262939453125,0.03321361541748047,like to see fluffy chick flicks sometimes so I'm,2.4,5.27,asr_estimate
+10,vision,20,30,10,-0.0032995939254760742,0.033792853355407715,I'm not against that but this one was pretty,5.069999999999999,8.35,asr_estimate
+10,vision,30,40,1,-0.005783259868621826,0.055262088775634766,terrible,8.35,9.939974,asr_estimate
+10,vision,40,50,0,0.0,0.0,,,,no_text_position
+11,text,0,10,9,0.25906115770339966,-0.6627506762742996,I would be ashamed to have made this film,0.0,4.095,asr_estimate
+11,text,10,20,5,-0.019892513751983643,0.088772714138031,if I was a director,4.095,5.803971,asr_estimate
+11,text,20,30,0,0.0,0.0,,,,no_text_position
+11,text,30,40,0,0.0,0.0,,,,no_text_position
+11,text,40,50,0,0.0,0.0,,,,no_text_position
+11,audio,0,10,9,-0.022914111614227295,0.046780407428741455,I would be ashamed to have made this film,0.0,4.095,asr_estimate
+11,audio,10,20,5,-0.012204468250274658,0.05940479040145874,if I was a director,4.095,5.803971,asr_estimate
+11,audio,20,30,0,0.0,0.0,,,,no_text_position
+11,audio,30,40,0,0.0,0.0,,,,no_text_position
+11,audio,40,50,0,0.0,0.0,,,,no_text_position
+11,vision,0,10,9,0.025697767734527588,-0.032409608364105225,I would be ashamed to have made this film,0.0,4.095,asr_estimate
+11,vision,10,20,5,0.02087491750717163,0.02986091375350952,if I was a director,4.095,5.803971,asr_estimate
+11,vision,20,30,0,0.0,0.0,,,,no_text_position
+11,vision,30,40,0,0.0,0.0,,,,no_text_position
+11,vision,40,50,0,0.0,0.0,,,,no_text_position
+12,text,0,10,9,-0.00226515531539917,0.06952321529388428,"Or worse, an individual previously had good credit",0.0,3.2249999999999996,asr_estimate
+12,text,10,20,10,0.019483864307403564,-0.05066335201263428,", but usually by no fault of their own,",3.2249999999999996,6.510000000000001,asr_estimate
+12,text,20,30,10,0.020506441593170166,-0.054278671741485596,"or perhaps by fault of their own, they have",6.510000000000001,8.955000000000002,asr_estimate
+12,text,30,40,10,0.03160768747329712,-0.0870981216430664,"let their credit sag, and credit scores is",8.955000000000002,11.58,asr_estimate
+12,text,40,50,3,0.06858605146408081,-0.17597687244415283,very low.,11.58,13.013997,asr_estimate
+12,audio,0,10,9,-0.02562016248703003,0.06558150053024292,"Or worse, an individual previously had good credit",0.0,3.2249999999999996,asr_estimate
+12,audio,10,20,10,-0.027678728103637695,0.08234453201293945,", but usually by no fault of their own,",3.2249999999999996,6.510000000000001,asr_estimate
+12,audio,20,30,10,-0.02905517816543579,0.1105615496635437,"or perhaps by fault of their own, they have",6.510000000000001,8.955000000000002,asr_estimate
+12,audio,30,40,10,-0.012997329235076904,0.024289071559906006,"let their credit sag, and credit scores is",8.955000000000002,11.58,asr_estimate
+12,audio,40,50,3,0.00118333101272583,-0.0029199719429016113,very low.,11.58,13.013997,asr_estimate
+12,vision,0,10,9,-0.0017480254173278809,-0.015875577926635742,"Or worse, an individual previously had good credit",0.0,3.2249999999999996,asr_estimate
+12,vision,10,20,10,-0.00012803077697753906,-0.011804163455963135,", but usually by no fault of their own,",3.2249999999999996,6.510000000000001,asr_estimate
+12,vision,20,30,10,-0.0006135106086730957,-0.004828929901123047,"or perhaps by fault of their own, they have",6.510000000000001,8.955000000000002,asr_estimate
+12,vision,30,40,10,-0.0011124610900878906,-0.011750757694244385,"let their credit sag, and credit scores is",8.955000000000002,11.58,asr_estimate
+12,vision,40,50,3,-0.00047510862350463867,-0.009697556495666504,very low.,11.58,13.013997,asr_estimate
+13,text,0,10,9,0.028238415718078613,-0.011994346976280212,"For example, I could take a set of",0.0,1.6600000000000001,asr_estimate
+13,text,10,20,10,0.04412660002708435,0.03475469350814819,"data and from that data, I can find a",1.6600000000000001,5.13,asr_estimate
+13,text,20,30,10,0.03265583515167236,-0.021630167961120605,relationship between any two of the given factors or more,5.13,8.4847505,asr_estimate
+13,text,30,40,1,0.005413234233856201,-0.06282217800617218,.,8.4847505,8.679002,asr_estimate
+13,text,40,50,0,0.0,0.0,,,,no_text_position
+13,audio,0,10,9,-0.044064342975616455,0.03080405294895172,"For example, I could take a set of",0.0,1.6600000000000001,asr_estimate
+13,audio,10,20,10,-0.006476104259490967,0.013714790344238281,"data and from that data, I can find a",1.6600000000000001,5.13,asr_estimate
+13,audio,20,30,10,-0.029461801052093506,0.006013154983520508,relationship between any two of the given factors or more,5.13,8.4847505,asr_estimate
+13,audio,30,40,1,-0.0025417208671569824,-0.023811310529708862,.,8.4847505,8.679002,asr_estimate
+13,audio,40,50,0,0.0,0.0,,,,no_text_position
+13,vision,0,10,0,0.0,0.0,"For example, I could take a set of",0.0,1.6600000000000001,asr_estimate
+13,vision,10,20,0,0.0,0.0,"data and from that data, I can find a",1.6600000000000001,5.13,asr_estimate
+13,vision,20,30,0,0.0,0.0,relationship between any two of the given factors or more,5.13,8.4847505,asr_estimate
+13,vision,30,40,0,0.0,0.0,.,8.4847505,8.679002,asr_estimate
+13,vision,40,50,0,0.0,0.0,,,,no_text_position
+14,text,0,10,9,-0.07134759426116943,-0.14118361473083496,He is the co-founder of Rossen,0.0,1.7787499999999998,asr_estimate
+14,text,10,20,10,-0.03387045860290527,-0.04683732986450195,and Vettese Limited and the former Executive Director,1.7787499999999998,4.51,asr_estimate
+14,text,20,30,10,-0.03342294692993164,-0.03207188844680786,of Uniform Final Examination (UFE) courses at,4.51,8.355,asr_estimate
+14,text,30,40,6,-0.05086112022399902,-0.08153623342514038,Toronto's York University.,8.355,10.350977,asr_estimate
+14,text,40,50,0,0.0,0.0,,,,no_text_position
+14,audio,0,10,9,0.01896369457244873,0.03965109586715698,He is the co-founder of Rossen,0.0,1.7787499999999998,asr_estimate
+14,audio,10,20,10,-0.00031065940856933594,0.004660189151763916,and Vettese Limited and the former Executive Director,1.7787499999999998,4.51,asr_estimate
+14,audio,20,30,10,-0.004659593105316162,-0.037380874156951904,of Uniform Final Examination (UFE) courses at,4.51,8.355,asr_estimate
+14,audio,30,40,6,-0.08473581075668335,-0.07487726211547852,Toronto's York University.,8.355,10.350977,asr_estimate
+14,audio,40,50,0,0.0,0.0,,,,no_text_position
+14,vision,0,10,9,0.03561192750930786,0.03446453809738159,He is the co-founder of Rossen,0.0,1.7787499999999998,asr_estimate
+14,vision,10,20,10,0.06814414262771606,0.09932440519332886,and Vettese Limited and the former Executive Director,1.7787499999999998,4.51,asr_estimate
+14,vision,20,30,10,0.06043487787246704,0.09323978424072266,of Uniform Final Examination (UFE) courses at,4.51,8.355,asr_estimate
+14,vision,30,40,6,0.13196665048599243,0.1621038317680359,Toronto's York University.,8.355,10.350977,asr_estimate
+14,vision,40,50,0,0.0,0.0,,,,no_text_position
+15,text,0,10,9,-0.00040900707244873047,-0.021250605583190918,"However, despite their poverty, the family prioritize",,,time_unverified
+15,text,10,20,10,0.024905800819396973,0.0973358154296875,prioritize education because they believed in its power to,,,time_unverified
+15,text,20,30,2,0.04140007495880127,0.16923916339874268,transform lives,,,time_unverified
+15,text,30,40,0,0.0,0.0,,,,no_text_position
+15,text,40,50,0,0.0,0.0,,,,no_text_position
+15,audio,0,10,9,-0.011348605155944824,-0.022524714469909668,"However, despite their poverty, the family prioritize",,,time_unverified
+15,audio,10,20,10,-0.0067588090896606445,0.003769993782043457,prioritize education because they believed in its power to,,,time_unverified
+15,audio,20,30,2,-0.0040405988693237305,0.014243841171264648,transform lives,,,time_unverified
+15,audio,30,40,0,0.0,0.0,,,,no_text_position
+15,audio,40,50,0,0.0,0.0,,,,no_text_position
+15,vision,0,10,9,-0.008666574954986572,-0.07148301601409912,"However, despite their poverty, the family prioritize",,,time_unverified
+15,vision,10,20,10,-0.004702150821685791,-0.04815340042114258,prioritize education because they believed in its power to,,,time_unverified
+15,vision,20,30,2,0.010425567626953125,0.035370469093322754,transform lives,,,time_unverified
+15,vision,30,40,0,0.0,0.0,,,,no_text_position
+15,vision,40,50,0,0.0,0.0,,,,no_text_position
+16,text,0,10,9,0.016306281089782715,-0.1607227325439453,"It's a terrible, this is a",0.0,1.75,asr_estimate
+16,text,10,20,2,0.02972853183746338,-0.3780066967010498,terrible movie,1.75,3.113997,asr_estimate
+16,text,20,30,0,0.0,0.0,,,,no_text_position
+16,text,30,40,0,0.0,0.0,,,,no_text_position
+16,text,40,50,0,0.0,0.0,,,,no_text_position
+16,audio,0,10,9,-0.0029044747352600098,0.005432844161987305,"It's a terrible, this is a",0.0,1.75,asr_estimate
+16,audio,10,20,2,0.0007039904594421387,-0.007905006408691406,terrible movie,1.75,3.113997,asr_estimate
+16,audio,20,30,0,0.0,0.0,,,,no_text_position
+16,audio,30,40,0,0.0,0.0,,,,no_text_position
+16,audio,40,50,0,0.0,0.0,,,,no_text_position
+16,vision,0,10,9,-0.0016645193099975586,0.02502608299255371,"It's a terrible, this is a",0.0,1.75,asr_estimate
+16,vision,10,20,2,-0.004415988922119141,0.10748231410980225,terrible movie,1.75,3.113997,asr_estimate
+16,vision,20,30,0,0.0,0.0,,,,no_text_position
+16,vision,30,40,0,0.0,0.0,,,,no_text_position
+16,vision,40,50,0,0.0,0.0,,,,no_text_position
+17,text,0,10,9,0.01791316270828247,0.0816802978515625,Applying these four design concepts to your presentations is,0.0,4.245000000000001,asr_estimate
+17,text,10,20,10,0.04596579074859619,0.2911853790283203,"simple, easy and will make people think you turned",4.245000000000001,7.955,asr_estimate
+17,text,20,30,5,0.016048431396484375,0.11081278324127197,into a design guru.,7.955,9.666992,asr_estimate
+17,text,30,40,0,0.0,0.0,,,,no_text_position
+17,text,40,50,0,0.0,0.0,,,,no_text_position
+17,audio,0,10,9,-0.0047716498374938965,-0.05409586429595947,Applying these four design concepts to your presentations is,0.0,4.245000000000001,asr_estimate
+17,audio,10,20,10,-0.0027112364768981934,-0.036307692527770996,"simple, easy and will make people think you turned",4.245000000000001,7.955,asr_estimate
+17,audio,20,30,5,-0.0027524828910827637,-0.04990661144256592,into a design guru.,7.955,9.666992,asr_estimate
+17,audio,30,40,0,0.0,0.0,,,,no_text_position
+17,audio,40,50,0,0.0,0.0,,,,no_text_position
+17,vision,0,10,9,-0.0006600618362426758,0.004739642143249512,Applying these four design concepts to your presentations is,0.0,4.245000000000001,asr_estimate
+17,vision,10,20,10,-0.0025185346603393555,-0.02312290668487549,"simple, easy and will make people think you turned",4.245000000000001,7.955,asr_estimate
+17,vision,20,30,5,-0.004879951477050781,-0.02965724468231201,into a design guru.,7.955,9.666992,asr_estimate
+17,vision,30,40,0,0.0,0.0,,,,no_text_position
+17,vision,40,50,0,0.0,0.0,,,,no_text_position
+18,text,0,10,9,0.07234162092208862,0.10978822410106659,-And in Denmark - the first Baltic Cod,0.0,2.675,asr_estimate
+18,text,10,20,10,0.08051842451095581,0.12378047406673431,"fishery has been MSC – certified -Meanwhile, the",2.675,7.3149999999999995,asr_estimate
+18,text,20,30,10,0.03208920359611511,0.010078370571136475,Faeroese Mackerel Fishery has been denied,7.3149999999999995,9.31,asr_estimate
+18,text,30,40,10,-0.059322506189346313,-0.1281159371137619,MSC certification based on the fact that the fishery has,9.31,12.685,asr_estimate
+18,text,40,50,9,0.02055487036705017,-0.0023893415927886963,failed to reach an agreement on mackerel,12.685,15.005,asr_estimate
+18,audio,0,10,9,0.0024475455284118652,0.0023843422532081604,-And in Denmark - the first Baltic Cod,0.0,2.675,asr_estimate
+18,audio,10,20,10,-0.02197161316871643,-0.0028967633843421936,"fishery has been MSC – certified -Meanwhile, the",2.675,7.3149999999999995,asr_estimate
+18,audio,20,30,10,-0.01017075777053833,0.0030772387981414795,Faeroese Mackerel Fishery has been denied,7.3149999999999995,9.31,asr_estimate
+18,audio,30,40,10,-0.008360445499420166,0.003073953092098236,MSC certification based on the fact that the fishery has,9.31,12.685,asr_estimate
+18,audio,40,50,9,-0.008327066898345947,-0.01999150961637497,failed to reach an agreement on mackerel,12.685,15.005,asr_estimate
+18,vision,0,10,9,-0.013458430767059326,-0.01741957664489746,-And in Denmark - the first Baltic Cod,0.0,2.675,asr_estimate
+18,vision,10,20,10,-0.014933288097381592,-0.0153517946600914,"fishery has been MSC – certified -Meanwhile, the",2.675,7.3149999999999995,asr_estimate
+18,vision,20,30,10,-0.007968097925186157,-0.0043386295437812805,Faeroese Mackerel Fishery has been denied,7.3149999999999995,9.31,asr_estimate
+18,vision,30,40,10,-0.01824742555618286,-0.01705675572156906,MSC certification based on the fact that the fishery has,9.31,12.685,asr_estimate
+18,vision,40,50,9,-0.032054245471954346,-0.04629935324192047,failed to reach an agreement on mackerel,12.685,15.005,asr_estimate
+19,text,0,10,9,0.018606185913085938,0.05084851384162903,People are surprisingly forgiving brands when they own,0.0,3.36,asr_estimate
+19,text,10,20,10,-0.11419302225112915,-0.2785297632217407,"up to mistakes, and unfortunately some haters out",3.36,6.880000000000001,asr_estimate
+19,text,20,30,10,-0.08731800317764282,-0.15931683778762817,there love to point fingers and jump all over imperfections,6.880000000000001,10.4775,asr_estimate
+19,text,30,40,10,0.06570881605148315,0.15482957661151886,"imperfections, but for the most part, people understand",9.965,13.683,asr_estimate
+19,text,40,50,0,0.0,0.0,,,,no_text_position
+19,audio,0,10,9,0.0018734335899353027,-0.0008417069911956787,People are surprisingly forgiving brands when they own,0.0,3.36,asr_estimate
+19,audio,10,20,10,-0.018669486045837402,-0.06901133060455322,"up to mistakes, and unfortunately some haters out",3.36,6.880000000000001,asr_estimate
+19,audio,20,30,10,0.0485154390335083,0.10672104358673096,there love to point fingers and jump all over imperfections,6.880000000000001,10.4775,asr_estimate
+19,audio,30,40,10,-0.022841691970825195,-0.0682843029499054,"imperfections, but for the most part, people understand",9.965,13.683,asr_estimate
+19,audio,40,50,0,0.0,0.0,,,,no_text_position
+19,vision,0,10,9,0.03390681743621826,0.0537971556186676,People are surprisingly forgiving brands when they own,0.0,3.36,asr_estimate
+19,vision,10,20,10,0.03676420450210571,0.06232401728630066,"up to mistakes, and unfortunately some haters out",3.36,6.880000000000001,asr_estimate
+19,vision,20,30,10,0.03596663475036621,0.0599919855594635,there love to point fingers and jump all over imperfections,6.880000000000001,10.4775,asr_estimate
+19,vision,30,40,10,0.027205169200897217,0.0323968231678009,"imperfections, but for the most part, people understand",9.965,13.683,asr_estimate
+19,vision,40,50,0,0.0,0.0,,,,no_text_position
+20,text,0,10,9,0.029053032398223877,0.14311575889587402,"And of course, click in the link of",0.0,2.045,asr_estimate
+20,text,10,20,10,0.02865886688232422,0.11898791790008545,"the description of this video for more, and we'll",2.045,4.83,asr_estimate
+20,text,20,30,10,0.004259884357452393,-0.03678417205810547,we'll have more live updates and a stock market,4.555,7.58,asr_estimate
+20,text,30,40,10,-0.001426100730895996,-0.042853355407714844,video (wrap-up) at the end of,7.58,9.174999999999999,asr_estimate
+20,text,40,50,4,0.011668086051940918,0.0327301025390625,the day today.,9.174999999999999,10.952995,asr_estimate
+20,audio,0,10,9,-0.007366597652435303,-0.030419349670410156,"And of course, click in the link of",0.0,2.045,asr_estimate
+20,audio,10,20,10,-0.00564122200012207,-0.03629326820373535,"the description of this video for more, and we'll",2.045,4.83,asr_estimate
+20,audio,20,30,10,-0.007461190223693848,-0.03322601318359375,we'll have more live updates and a stock market,4.555,7.58,asr_estimate
+20,audio,30,40,10,-0.006726682186126709,-0.006845831871032715,video (wrap-up) at the end of,7.58,9.174999999999999,asr_estimate
+20,audio,40,50,4,-0.005621612071990967,0.009514212608337402,the day today.,9.174999999999999,10.952995,asr_estimate
+20,vision,0,10,9,0.0036156177520751953,0.01235055923461914,"And of course, click in the link of",0.0,2.045,asr_estimate
+20,vision,10,20,10,0.017084836959838867,0.09398722648620605,"the description of this video for more, and we'll",2.045,4.83,asr_estimate
+20,vision,20,30,10,0.004881858825683594,0.023460030555725098,we'll have more live updates and a stock market,4.555,7.58,asr_estimate
+20,vision,30,40,10,0.0010862946510314941,-0.012135982513427734,video (wrap-up) at the end of,7.58,9.174999999999999,asr_estimate
+20,vision,40,50,4,0.0011922121047973633,-0.011202335357666016,the day today.,9.174999999999999,10.952995,asr_estimate
